@@ -1,27 +1,28 @@
 .wrapper{
     display: grid;
-    grid-template-columns: 50px 50px 50px;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
    
     grid-template-areas: 
-    "header header header"
-    "main main"
-    "footer footer footer ";
+    "head head"
+    "nav main "
+    "nav foot ";
 
 }
 .wrapper > header{
     grid-area: head;
-    color: aqua;
+    background-color: aqua;
 }
 .wrapper > nav{
     grid-area:nav;
-    color: black;
+    background-color: black;
 }
 .wrapper > main{
     grid-area:main;
-    color: blue;
+    background-color: blue;
 
 } 
 .wrapper > footer{
     grid-area:footer;
-    color: chocolate;
+    background-color: chocolate;
 }
