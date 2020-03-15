@@ -1,4 +1,27 @@
 .wrapper{
     display: grid;
-    
+    grid-template-columns: 50px 50px 50px;
+   
+    grid-template-areas: 
+    "header header header"
+    "main main"
+    "footer footer footer ";
+
+}
+.wrapper > header{
+    grid-area: head;
+    color: aqua;
+}
+.wrapper > nav{
+    grid-area:nav;
+    color: black;
+}
+.wrapper > main{
+    grid-area:main;
+    color: blue;
+
+} 
+.wrapper > footer{
+    grid-area:footer;
+    color: chocolate;
 }
