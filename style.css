@@ -1,0 +1,30 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "nav          nav          nav "
+      "header      header       header"
+      "content1   content1    content1"
+      "content2   content2    content2"
+      "footer      footer      footer "
+  
+}
+
+.main-nav {
+    grid-area: nav;
+  }
+
+.main-head {
+    grid-area: header;
+  }
+
+  .content1 {
+    grid-area: content1;
+  }
+  .content2 {
+    grid-area: content2;
+  }
+
+  .main-footer {
+    grid-area: footer;
+  }
