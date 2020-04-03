@@ -1,3 +1,4 @@
+/*---------------------- Grid instälningar ----------------------*/
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -6,25 +7,71 @@
       "header      header       header"
       "content1   content1    content1"
       "content2   content2    content2"
-      "footer      footer      footer "
+      "   .       footer         .    "
   
 }
 
+
+  /*---------------------- NAVBAR ----------------------*/
 .main-nav {
-    grid-area: nav;
-  }
+  grid-area: nav;
+  width: 100%;
+  text-decoration: none;
+  float: left;
+  display: block;
 
+  
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0px;
+  
+}
+
+li a{
+  text-decoration: none;
+ 
+}
+ 
+
+/*Kontakt länken ska vara placerad längs till höger*/ 
+#höger{
+  float: right;
+  padding-right: 2px;
+}
+
+  
+
+ 
+ 
+  /*---------------------- Header ----------------------*/
 .main-head {
-    grid-area: header;
-  }
+  grid-area: header;
+}
+ 
+ 
+  /*---------------------- Content 1 ----------------------*/
+.content1 {
+  grid-area: content1;
+}
+  
+ 
+ 
+  /*---------------------- Content 2 ----------------------*/
+.content2 {
+  grid-area: content2;
+}
+ 
+  
+  /*---------------------- Footer ----------------------*/
+.main-footer {
+  grid-area: footer;
+  text-decoration: none;
+  text-align: center;
+  
+  
+}
 
-  .content1 {
-    grid-area: content1;
-  }
-  .content2 {
-    grid-area: content2;
-  }
 
-  .main-footer {
-    grid-area: footer;
-  }
+
