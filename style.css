@@ -21,7 +21,7 @@
  
 }
 
-li{
+.li.header{
   float: left;
 }
 
@@ -75,7 +75,9 @@ li a{
   
 }
 .li.footer{
-  display: block;
+  color: red;
+  
+
 }
 
 
