@@ -2,6 +2,7 @@ body{
   padding: 0;
   margin: 0;
   width: 100%;
+  background-color: #e7e7e7ef;
 }
 /*---------------variabler------------- */
 :root{
@@ -27,8 +28,7 @@ body{
 .main-nav {
   grid-area: nav;
   text-decoration: none;
-  background-color:#ffffff;
- 
+  background-color: #fffffff1;
 }
 
 .nav-header{
@@ -46,7 +46,7 @@ body{
  }
  li a{
   text-align: center;
-  padding: 10px 5px;
+  padding: 1px 5px; 
   text-decoration: none;
   list-style-type: none;
   display: block;
@@ -76,26 +76,23 @@ body{
   /*---------------------- Content 1 ----------------------*/
 .content1 {
   grid-area: content1;
-  
+  grid-template-areas: "content1 contnent 1 right-pic";
+  padding: 1em;
 }
-.bild-Rcontent{
-  grid-area: picture-R;
-  grid
-  
-  
-}
-.bild-R{
+.pic-right{
+  grid-area: right-pic;
+  grid-column-start: 3;
   width: 25%;
-  height: 25%;
-
+  max-width: 250px;
+  height: auto;  
 }
-  
  
  
   /*---------------------- Content 2 ----------------------*/
 .content2 {
   grid-area: content2;
   background-color: var(--grå);
+  padding: 1em;
 }
  
   
@@ -107,7 +104,11 @@ body{
   
 
 }
-
+.main-footer ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 
 
