@@ -1,3 +1,8 @@
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 /*---------------variabler------------- */
 :root{
   --grå: #cacaca;
@@ -10,9 +15,10 @@
     grid-template-areas: 
       "nav          nav          nav "
       "header      header       header"
-      "content1   content1    content1"
-      "content2   content2    content2"
-      "   .       footer         .    "
+      "content1   content1    picture-R"
+      "picture-L   content2    content2"
+      "   .       footer         .    ";
+     
   
 }
 
@@ -20,38 +26,40 @@
   /*---------------------- NAVBAR ----------------------*/
 .main-nav {
   grid-area: nav;
-  width: 100%;
   text-decoration: none;
-  
-  background-color:var(--grå);
-  
+  background-color:#ffffff;
  
 }
 
 .nav-header{
   float: left;
-  padding: 10px;
-  margin: 5px;
-  border-collapse: 1px solid black;
-  
-}
+  padding:10px ;
+ }
 
-ul{
+ .ul-header {
   list-style-type: none;
-  padding-left: 0px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
   
-}
-
-li a{
-  text-decoration: none;
  
-}
+ }
+ li a{
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  list-style-type: none;
+  display: block;
+  
+  
+ }
+
  
 
 /*Kontakt länken ska vara placerad längs till höger*/ 
 #höger{
   float: right;
-  padding-right: 2px;
+  padding: 10px;
 }
 
   
@@ -61,12 +69,25 @@ li a{
   /*---------------------- Header ----------------------*/
 .main-head {
   grid-area: header;
+  background-color: var(--grå);
 }
  
  
   /*---------------------- Content 1 ----------------------*/
 .content1 {
   grid-area: content1;
+  
+}
+.bild-Rcontent{
+  grid-area: picture-R;
+  grid
+  
+  
+}
+.bild-R{
+  width: 25%;
+  height: 25%;
+
 }
   
  
@@ -74,6 +95,7 @@ li a{
   /*---------------------- Content 2 ----------------------*/
 .content2 {
   grid-area: content2;
+  background-color: var(--grå);
 }
  
   
@@ -83,13 +105,9 @@ li a{
   text-decoration: none;
   text-align: center;
   
-  
-}
-.nav-footer{
-  
-  
 
 }
+
 
 
 
