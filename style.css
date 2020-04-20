@@ -12,13 +12,13 @@ body{
 /*---------------------- Grid instälningar ----------------------*/
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1f;
     grid-template-areas: 
-      "nav          nav          nav "
-      "header      header       header"
-      "content1   content1    picture-R"
-      "picture-L   content2    content2"
-      "   .       footer         .    ";
+      "nav          nav          nav  "
+      "header      header       header "
+      "content1   content1    right-pic"
+      "picture-L  content2     content2"
+      "   .       footer        .     ";
      
   
 }
@@ -54,6 +54,12 @@ body{
   
  }
 
+ li.nav-header a:hover{
+   background-color: #aaaaaa;
+   padding: 1px 5px;
+
+ }
+
  
 
 /*Kontakt länken ska vara placerad längs till höger*/ 
@@ -76,15 +82,13 @@ body{
   /*---------------------- Content 1 ----------------------*/
 .content1 {
   grid-area: content1;
-  grid-template-areas: "content1 contnent 1 right-pic";
+ 
   padding: 1em;
 }
 .pic-right{
-  grid-area: right-pic;
-  grid-column-start: 3;
-  width: 25%;
-  max-width: 250px;
-  height: auto;  
+  align-content: right;
+  width: 35%;
+  
 }
  
  
@@ -112,3 +116,7 @@ body{
 
 
 
+.formular{
+  text-align: center;
+
+}
