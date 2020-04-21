@@ -117,6 +117,14 @@ body{
 
 
 .formular{
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1f;
+  grid-template-areas: 
+    "nav          nav          nav  "
+    "header      header       header "
+    "   .     content1        .    "
+    "   .       footer         .     ";
+    
+    text-align: center;
 
 }
