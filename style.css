@@ -10,15 +10,15 @@ body{
 }
 
 /*---------------------- Grid instälningar ----------------------*/
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1f;
-    grid-template-areas: 
-      "nav          nav          nav  "
-      "header      header       header "
-      "content1   content1    right-pic"
-      "picture-L  content2     content2"
-      "   .       footer        .     ";
+.index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1f;
+  grid-template-areas: 
+    "nav          nav          nav  "
+    "header      header       header "
+    "content1   content1    content1"
+    "content2  content2     content2"
+    "   .       footer        .     ";
      
   
 }
@@ -114,8 +114,20 @@ body{
   margin: 0;
 }
 
+/*-----------------------  Album hemsidan  -----------------------------------*/
+.album{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
 
+}
+.Album-bilder{
+  width: fit-content;
+  width: 25%;
+
+}
+
+/*-----------------------  kontakt hemsidan  -----------------------------------*/
 .formular{
   display: grid;
   grid-template-columns: 1fr 1fr 1f;

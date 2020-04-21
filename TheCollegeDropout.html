@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graduation</title>
+    <link href="style.css" rel="stylesheet">
+    <title> Kanye Waste </title>
 </head>
 <body>
-    <div class="wrapper">
-        <nav class="main-nav"> </nav>
-        <ul>
-            <li> <a href="">Kanye West</a></li>
-            <li> <a href=""> Album </a> </li>
-            <li> <a href=""> Mode designer </a></li>
-            <li> <a href=""> Familj </a> </li>
-            <li id="nav.höger"> <a href=""> Kontakt </a> </li>
-        </ul>
+    <div class="wrapper"> <!-- Denna stycket har jag gjort för att jag ska kunna göra en grid display, den kommer att täcka hela bodyen-->
+        
 
         <header class="main-head">
-            <h1> Kanye West </h1>
-            <img src="" alt="bild">
+            <section class="main-nav"> 
+                <nav > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
+                   <ul class="ul-header"> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
+                       <li class="nav-header"> <a class="active" href="">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
+                       <li class="nav-header"> <a href=""> Album </a> </li> <!-- En Album länk i sort av en lista för naven men som kommer -->
+                       <li class="nav-header"> <a href=""> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
+                       <li class="nav-header"> <a href=""> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
+                       <li  class="nav-header" id="höger" > <a href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
+                       
+                    </ul>
+                 </nav>
+            </section>
+            <section class="header/picture">
+                    <h1> Kanye West </h1>
+                    <img src="" alt="bild">
+            </section>
         </header>
 
 
        
-
 
         <article class="content1">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, excepturi ut explicabo odio molestias reprehenderit quisquam? Eum repellat et, officiis delectus recusandae sequi maiores, illum amet nostrum totam ullam ex.</p>
