@@ -3,6 +3,7 @@ body{
   margin: 0;
   width: 100%;
   background-color: #e7e7e7ef;
+  
 }
 /*---------------variabler------------- */
 :root{
@@ -10,15 +11,16 @@ body{
 }
 
 /*---------------------- Grid instälningar ----------------------*/
-.index {
+ .index{
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1f;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 
-    "nav          nav          nav  "
-    "header      header       header "
-    "content1   content1    content1"
-    "content2  content2     content2"
-    "   .       footer        .     ";
+    
+    "content1   content1        content1   "
+    "content2   content2      content2   "
+    "footer      footer      footer  ";
+    padding-bottom: 7rem;
      
   
 }
@@ -28,12 +30,12 @@ body{
 .main-nav {
   grid-area: nav;
   text-decoration: none;
-  background-color: #fffffff1;
+  background-color: #ffffff;
 }
 
 .nav-header{
   float: left;
-  padding:10px ;
+  padding:1rem ;
  }
 
  .ul-header {
@@ -46,18 +48,23 @@ body{
  }
  li a{
   text-align: center;
-  padding: 1px 5px; 
+  padding: 1rem 1rem; 
   text-decoration: none;
   list-style-type: none;
   display: block;
+  padding: 5px;
   
   
  }
 
  li.nav-header a:hover{
-   background-color: #aaaaaa;
-   padding: 1px 5px;
+   background-color: #747474;
+   padding: 1rem 2rem;
 
+ }
+ h1{
+   text-align: center;
+   padding: 1em;
  }
 
  
@@ -66,6 +73,7 @@ body{
 #höger{
   float: right;
   padding: 10px;
+  padding-top: 13 px;
 }
 
   
@@ -75,20 +83,26 @@ body{
   /*---------------------- Header ----------------------*/
 .main-head {
   grid-area: header;
-  background-color: var(--grå);
+  
 }
  
  
   /*---------------------- Content 1 ----------------------*/
 .content1 {
   grid-area: content1;
+ padding: 1em;
+ text-align: left;
+ justify-items: left;
+ grid-column:1/3;
  
-  padding: 1em;
 }
-.pic-right{
-  align-content: right;
-  width: 35%;
-  
+
+.bild-höger{
+  height: auto ;
+  max-width: 25vw;
+  justify-content: center;
+  object-fit: cover;
+  padding: 1em;
 }
  
  
@@ -96,7 +110,27 @@ body{
 .content2 {
   grid-area: content2;
   background-color: var(--grå);
-  padding: 1em;
+  padding: 1rem;
+  text-align: right;
+  grid-column: 2/4;
+  
+  
+  
+   
+}
+
+.bild-vänster{
+height: auto ;
+ max-width: 25vw;
+ justify-content: center;
+ margin: auto;
+ object-fit: fill;
+ padding: 1em;
+ 
+
+  
+
+  
 }
  
   
@@ -105,6 +139,10 @@ body{
   grid-area: footer;
   text-decoration: none;
   text-align: center;
+  bottom: 0;
+  border-top: 2px solid black;
+  background-color: #ffffff;
+  
   
 
 }
@@ -115,16 +153,48 @@ body{
 }
 
 /*-----------------------  Album hemsidan  -----------------------------------*/
+@media (min-width: 600px) {
+  .album { grid-template-columns: repeat(2, 1fr); }
+  
+}
+
+
+@media (min-width: 900px) {
+  .album { grid-template-columns: repeat(3, 1fr); }
+}
 .album{
+ max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  justify-content: center;
+  margin: 0 10rem ;
+  
+  padding-bottom: 10rem;
+  
+  
+ 
+ 
+}
+
+.Album-bilder{
+ height: 50vh ;
+ max-width: 25vw;
+ justify-content: center;
+ margin: auto;
+ object-fit: cover;
 
 
 }
-.Album-bilder{
-  width: fit-content;
-  width: 25%;
+.title{
+  color: black;
+  font-weight: bold;
+  text-align: center;
 
+} 
+.album a{
+  text-decoration: none;
+  color: #424242ef;
 }
 
 /*-----------------------  kontakt hemsidan  -----------------------------------*/
@@ -134,8 +204,8 @@ body{
   grid-template-areas: 
     "nav          nav          nav  "
     "header      header       header "
-    "   .     content1        .    "
-    "   .       footer         .     ";
+    "   .       content1        .    "
+    " footer     footer       footer ";
     
     text-align: center;
 
