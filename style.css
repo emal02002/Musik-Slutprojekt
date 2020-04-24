@@ -12,9 +12,8 @@ body{
 
 /*---------------------- Grid instälningar ----------------------*/
  .index{
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas: 
     
     "content1   content1        content1   "
@@ -30,12 +29,15 @@ body{
 .main-nav {
   grid-area: nav;
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: #c3c3c3;
+  display: block ;
+  
 }
 
 .nav-header{
   float: left;
   padding:1rem ;
+  
  }
 
  .ul-header {
@@ -43,6 +45,7 @@ body{
   padding: 0;
   margin: 0;
   overflow: hidden;
+  
   
  
  }
@@ -53,14 +56,16 @@ body{
   list-style-type: none;
   display: block;
   padding: 5px;
+  color: white;
   
   
  }
+ .active{
+   background-color: #383838;
+ }
 
- li.nav-header a:hover{
-   background-color: #747474;
-   padding: 1rem 2rem;
-
+ li a:hover:not(.active) {
+   background-color: #a1a1a1;
  }
  h1{
    text-align: center;
@@ -76,6 +81,7 @@ body{
   padding-top: 13 px;
 }
 
+
   
 
  
@@ -85,11 +91,16 @@ body{
   grid-area: header;
   
 }
+.header/pictures{
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
  
  
   /*---------------------- Content 1 ----------------------*/
 .content1 {
-  grid-area: content1;
+ grid-area: content1;
  padding: 1em;
  text-align: left;
  justify-items: left;
@@ -103,6 +114,7 @@ body{
   justify-content: center;
   object-fit: cover;
   padding: 1em;
+  
 }
  
  
@@ -112,7 +124,7 @@ body{
   background-color: var(--grå);
   padding: 1rem;
   text-align: right;
-  grid-column: 2/4;
+  grid-column: 2  /4;
   
   
   
@@ -141,7 +153,7 @@ height: auto ;
   text-align: center;
   bottom: 0;
   border-top: 2px solid black;
-  background-color: #ffffff;
+  background-color: #c3c3c3;
   
   
 
@@ -183,8 +195,15 @@ height: auto ;
  justify-content: center;
  margin: auto;
  object-fit: cover;
+ 
 
 
+}
+.album > section:nth-child(odd){
+  filter: grayscale(90%); /*För att göra  filtera bilderna så att detr passar desigenen det är för udda*/
+}
+.album > section:nth-child(even){
+  filter: grayscale(200%);
 }
 .title{
   color: black;
@@ -200,13 +219,25 @@ height: auto ;
 /*-----------------------  kontakt hemsidan  -----------------------------------*/
 .formular{
   display: grid;
-  grid-template-columns: 1fr 1fr 1f;
+  grid-template-columns: 1fr;
   grid-template-areas: 
-    "nav          nav          nav  "
-    "header      header       header "
-    "   .       content1        .    "
-    " footer     footer       footer ";
-    
-    text-align: center;
+  "   .         form        .    "
+  " footer     footer       footer ";
+  
+  text-align: center;
+  padding-bottom: 10rem;
 
+}
+.Kontakt{
+  grid-area: form;
+  padding: 1em;
+  justify-items: center;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+.runda-hörn{
+  border-radius: 100%;
+  width: 25%;
+  height: auto;
+  justify-items: center;
 }
