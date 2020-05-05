@@ -263,3 +263,29 @@ height: auto ;
   height: auto;
   justify-items: center;
 }
+.Album123{
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+   "låt1 låt1 låt1video"
+   "låt2 låt2 låt2video";
+  margin: 0;
+  padding-bottom: 7rem;
+}
+.låt1{
+  grid-area: låt1;
+}
+.låt2{
+  grid-area: låt2;
+}
+.video1{
+  width: 150px;
+ height: 150px; 
+
+}
+.video2{
+  grid-area: låt2video;
+  width: 420px;
+  height: 345px;
+ 
+}
