@@ -15,64 +15,83 @@ body{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: 
-    
     "content1   content1        content1   "
     "content2   content2      content2   "
     "footer      footer      footer  ";
     padding-bottom: 7rem;
+    
      
   
 }
 
 
+
   /*---------------------- NAVBAR ----------------------*/
-.main-nav {
-  grid-area: nav;
+
+a {
   text-decoration: none;
-  background-color: #c3c3c3;
-  display: block ;
-  
 }
 
-.nav-header{
-  float: left;
-  padding:1rem ;
-  
- }
+.manin-nav {
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+}
 
- .ul-header {
-  list-style-type: none;
-  padding: 0;
+.ul-header, .dropdown {
+  background: rgb(173, 173, 173);
+  list-style: none;
   margin: 0;
-  overflow: hidden;
-  
-  
- 
- }
- li a{
-  text-align: center;
-  padding: 1rem 1rem; 
-  text-decoration: none;
-  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-header, .drop {
+  color: #fff;
+  background: rgb(173, 173, 173);
   display: block;
-  padding: 5px;
-  color: white;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
   
-  
- }
- .active{
-   background-color: #383838;
- }
+.nav-header a {
+  color: #fff;
+}
 
- li a:hover:not(.active) {
-   background-color: #a1a1a1;
- }
- h1{
-   text-align: center;
-   padding: 1em;
- }
+li:hover {
+  background: rgb(93, 93, 93);
+  cursor: pointer;
+}
 
- 
+ul li ul {
+  background: rgb(173, 173, 173);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+}
+h1{
+  text-align: center;
+  padding: 1em;
+}
+
+
 
 /*Kontakt länken ska vara placerad längs till höger*/ 
 #höger{
@@ -91,11 +110,15 @@ body{
   grid-area: header;
   
 }
-.header/pictures{
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
+.image-header{
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 150px;
+  max-width: 900px;
 }
+
  
  
   /*---------------------- Content 1 ----------------------*/
@@ -181,7 +204,6 @@ height: auto ;
   grid-row-gap: 2rem;
   justify-content: center;
   margin: 0 10rem ;
-  
   padding-bottom: 10rem;
   
   

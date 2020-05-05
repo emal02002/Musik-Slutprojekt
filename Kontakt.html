@@ -12,7 +12,13 @@
             <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
                <ul class="ul-header"> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
                    <li class="nav-header"> <a href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
-                   <li class="nav-header"> <a href="album.html"> Album </a> </li> <!-- En Album länk i sort av en lista för naven men som kommer -->
+                   <li class="nav-header"> <a class="active" href="album.html"> Album </a> <!-- En Album länk i sort av en lista för naven men som kommer -->
+                    <ul class="dropdown">
+                        <li class="drop"><a href="#">Link 1</a></li>
+                        <li class="drop"><a href="#">Link 2</a></li>
+                        <li class="drop"><a href="#">Link 3</a></li>
+                    </ul>
+                    </li>
                    <li class="nav-header"> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
                    <li class="nav-header"> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
                    <li  class="nav-header" id="höger" > <a  class="active" href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
