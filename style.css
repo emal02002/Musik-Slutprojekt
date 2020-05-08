@@ -3,6 +3,7 @@ body{
   margin: 0;
   width: 100%;
   background-color: #e7e7e7ef;
+
   
 }
 /*---------------variabler------------- */
@@ -10,18 +11,16 @@ body{
   --grå: #cacaca;
 }
 
-/*---------------------- Grid instälningar ----------------------*/
+/*---------------------- Grid instälningar  ----------------------*/
  .index{
   display: grid;
-  grid-template-columns: 50%;
+  grid-template-columns: 1fr;
   grid-template-areas: 
     "content1   content1   "
     "content2   content2   "
     "  footer    footer  ";
     padding-bottom: 7rem;
-    
-     
-  
+
 }
 
 
@@ -33,11 +32,11 @@ a {
 }
 
 .manin-nav {
-  font-family: Georgia, 'Times New Roman', Times, serif ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .ul-header, .dropdown {
-  background: rgb(173, 173, 173);
+  background: rgb(94, 94, 94);
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -45,21 +44,23 @@ a {
 
 .nav-header, .drop {
   color: #fff;
-  background: rgb(173, 173, 173);
+  background: rgb(94, 94, 94);
   display: block;
   float: left;
   padding: 1rem;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
+  z-index: 1; /*Denna funktionen används för att jag hade probelem  med att drop down menyn kommer under innehållet,  men med hjälp av denna funktionen så  kan man  lägga det man  vill överst*/
 }
   
 .nav-header a {
   color: #fff;
+  font-size: 1.3em;
 }
 
-li:hover {
-  background: rgb(93, 93, 93);
+.ul-header .nav-header:hover {
+  background: rgb(192, 192, 192);
   cursor: pointer;
 }
 
@@ -82,13 +83,16 @@ ul li ul:hover {
   display: block;
 }
 
-ul li ul li {
-    clear: both;
-  width: 100%;
+li.drop:hover{
+  background-color: rgb(192, 192, 192);
 }
 h1{
   text-align: center;
-  padding: 1em;
+  height: 45vh;
+  margin: 0 ;
+  
+ 
+  
 }
 
 
@@ -96,8 +100,7 @@ h1{
 /*Kontakt länken ska vara placerad längs till höger*/ 
 #höger{
   float: right;
-  padding: 10px;
-  padding-top: 13 px;
+  padding: 1rem;
 }
 
 
@@ -108,25 +111,35 @@ h1{
   /*---------------------- Header ----------------------*/
 .main-head {
   display: grid;
-  
  
 }
 
-.header/picture{
-  display: grid;
+.hIndex, .hAlbum, .hGrad, .hLate, .hTheCol, .hMode, .hFamilj{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  filter: grayscale(100%);
+
+}
+.hIndex{
+  background-image: url("https://consequenceofsound.net/wp-content/uploads/2015/04/screen-shot-2015-04-16-at-8-54-18-am.png?w=807");
+  background-attachment:fixed ;  
+  
+}
+.kaney, .alb, .grad, .Late, .TheCol, .Mode, .Familj{
   text-align: center;
-  padding: auto;
-  margin: auto;
-  padding-top: 50px;
-  
-
-
+  color: white;
+  padding-top: 13vh;
+  font-size: 10vw;
+  background-color:#1313138f ;
+  font-family: 'Times New Roman', Times, serif;
+  background-attachment: fixed;
 
 }
 
- 
- 
-  /*---------------------- Content 1 ----------------------*/
+
+ /*---------------------- Content 1 ----------------------*/
 .content1 {
  grid-area: content1;
  padding: 1em;
@@ -178,10 +191,7 @@ text-höger{
   text-align: center;
   bottom: 0;
   border-top: 2px solid black;
-  background-color: #c3c3c3;
-  color: black;
-  
-  
+  background-color: rgb(94, 94, 94);
 
 }
 .main-footer ul{
@@ -189,7 +199,14 @@ text-höger{
   padding: 0;
   margin: 0;
 }
+.main-footer a{
+  color:#fff ;
+}
+.main-footer li  a:hover{
+  background-color: rgb(182, 182, 182);
 
+
+}
 /*-----------------------  Album hemsidan  -----------------------------------*/
 @media (min-width: 600px) {
   .album { grid-template-columns: repeat(2, 1fr); }
@@ -209,7 +226,7 @@ text-höger{
   margin: 0 10rem ;
   padding-bottom: 10rem;
   background-color: #ddddddab;
- 
+ padding-top: 15vh;
  }
 
 .Album-bilder{
@@ -282,9 +299,8 @@ text-höger{
   grid-template-areas: 
   "   .         form        .    "
   " footer     footer       footer ";
-  
   text-align: center;
-  padding-bottom: 10rem;
+ padding:10rem 15em ;
 
 }
 .Kontakt{
@@ -299,4 +315,32 @@ text-höger{
   width: 25%;
   height: auto;
   justify-items: center;
+}
+.textfält{
+  border-radius: 5px;
+  background-color: #757575ef;
+  color: aliceblue;
+  padding: 10px 17px;
+
+}
+textarea{
+  border-radius: 5px;
+  background-color: #757575ef;
+  color: aliceblue;
+
+}
+#skicka{
+  background-color: #e2e2e2;
+  padding: 10px 17px;
+  border-radius: 15px;
+  box-shadow: rgb(49, 47, 47);
+}
+#skicka:hover{
+  background-color: rgb(192, 192, 192);
+}
+.box{
+  border-style: solid;
+  border-radius: 25px;
+  padding: 0;
+
 }
