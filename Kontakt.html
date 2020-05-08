@@ -8,66 +8,62 @@
 </head>
 <body>
     <header class="main-head">
-        <section > 
-            <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
-               <ul class="ul-header"> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
-                   <li class="nav-header"> <a href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
-                   <li class="nav-header"> <a class="active" href="album.html"> Album </a> <!-- En Album länk i sort av en lista för naven men som kommer -->
+        <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
+            <ul class="ul-header"> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
+                <li class="nav-header"> <a class="active" href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
+                <li class="nav-header"> <a href="album.html">Album</a>
                     <ul class="dropdown">
-                        <li class="drop"><a href="#">Link 1</a></li>
-                        <li class="drop"><a href="#">Link 2</a></li>
-                        <li class="drop"><a href="#">Link 3</a></li>
+                        <li class="drop"><a href="graduation.html">Graduation</a></li>
+                        <li class="drop"><a href="LateRegistraion.html">Late Registraion</a></li>
+                        <li class="drop"><a href="TheCollegeDropout.html">The College Drop Out</a></li>
                     </ul>
-                    </li>
-                   <li class="nav-header"> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
-                   <li class="nav-header"> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
-                   <li  class="nav-header" id="höger" > <a  class="active" href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
-                   
-                </ul>
-             </nav>
-        </section>
-        <section class="header/picture">
-                <h1> Kanye West <br><br><img class="runda-hörn" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Kanye_West_at_the_2009_Tribeca_Film_Festival.jpg" alt="bild"></h1>
-                
-        </section>
-    </header>
-
-    <div class="formular"> <!-- Denna stycket har jag gjort för att jag ska kunna göra en grid display, den kommer att täcka hela bodyen-->
-        
-
-        <section>
-            <h2>formular</h2>
-            <section class="kontakt">
-            <form action="tack.html">
-                <label for="f&enamn">För och efternamn</label> <br>
-                <input type="text" name="f&enamn" id="f&enamn"> <br>
-                <label for="mejladress">Mejladress</label> <br>
-                <input type="text" name="mejladress" id="mejladress"> <br>
-                <label for="Telefonnummer">Telefonnummer</label> <br>
-                <input type="text" name="Telefonnummer" id="Telefonnummer"> <br>
-                <label for="Beskrivning">Beskrivning</label> <br>
-                <textarea name="Beskrivning" id="Beskrivning" cols="30" rows="10">Beskrivning </textarea> <br> <br>
-                <input type="submit" value="submit">
-
-            </form>
-        </section>
-
-            
-        </section>
-        </div>
-
-       
-
-
-        <footer class="main-footer">
-            <ul>
-                <li> <a class="footer" href=""> Album </a> </li>
-                <li> <a class="footer" href=""> Mode designer </a></li>
-                <li> <a class="footer" href=""> Familj </a> </li>
-                <li> <a class="footer" href=""> Kontakt </a> </li>
+                </li>
+                <li class="nav-header"> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
+                <li class="nav-header"> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
+                <li  class="nav-header" id="höger" > <a href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
+                    
             </ul>
-        </footer>
+        </nav>
+     </header>
+     <section class="header/picture">
+        <h1> Kanye West <br><br><img class="runda-hörn" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Kanye_West_at_the_2009_Tribeca_Film_Festival.jpg" alt="bild"></h1>
+
+</section>
+
+
+<div class="formular"> <!-- Denna stycket har jag gjort för att jag ska kunna göra en grid display, den kommer att täcka hela bodyen-->
+ 
+<section>
+    <h2>formular</h2>
+    <section class="kontakt">
+    <form action="tack.html">
+        <label for="f&enamn">För och efternamn</label> <br>
+        <input type="text" name="f&enamn" id="f&enamn"> <br>
+        <label for="mejladress">Mejladress</label> <br>
+        <input type="text" name="mejladress" id="mejladress"> <br>
+        <label for="Telefonnummer">Telefonnummer</label> <br>
+        <input type="text" name="Telefonnummer" id="Telefonnummer"> <br>
+        <label for="Beskrivning">Beskrivning</label> <br>
+        <textarea name="Beskrivning" id="Beskrivning" cols="30" rows="10">Beskrivning </textarea> <br> <br>
+        <input type="submit" value="submit">
+
+    </form>
+    </section>
+</section>
+</div>
+
     
-    
+
+
+<footer class="main-footer">
+    <ul>
+        <li> <a href="album.html"> Album </a> </li>
+        <li> <a href="ModeDesigner.html"> Mode designer </a></li>
+        <li> <a href="Familj.html"> Familj </a> </li>
+        <li> <a href="Kontakt.html"> Kontakt </a> </li>
+    </ul>
+</footer>
+
+
 </body>
 </html>

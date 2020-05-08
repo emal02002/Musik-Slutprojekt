@@ -13,11 +13,11 @@ body{
 /*---------------------- Grid instälningar ----------------------*/
  .index{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 50%;
   grid-template-areas: 
-    "content1   content1        content1   "
-    "content2   content2      content2   "
-    "footer      footer      footer  ";
+    "content1   content1   "
+    "content2   content2   "
+    "  footer    footer  ";
     padding-bottom: 7rem;
     
      
@@ -107,16 +107,21 @@ h1{
  
   /*---------------------- Header ----------------------*/
 .main-head {
-  grid-area: header;
+  display: grid;
   
+ 
 }
-.image-header{
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  max-height: 150px;
-  max-width: 900px;
+
+.header/picture{
+  display: grid;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+  padding-top: 50px;
+  
+
+
+
 }
 
  
@@ -137,6 +142,7 @@ h1{
   justify-content: center;
   object-fit: cover;
   padding: 1em;
+  grid-column: 3/4;
   
 }
  
@@ -147,25 +153,21 @@ h1{
   background-color: var(--grå);
   padding: 1rem;
   text-align: right;
-  grid-column: 2  /4;
-  
-  
-  
-   
+  grid-column: 2/4;
+}
+.vänster{
+  justify-self: left;
+  max-width: max-content;
 }
 
+text-höger{
+  float:right;
+}
 .bild-vänster{
-height: auto ;
- max-width: 25vw;
- justify-content: center;
- margin: auto;
- object-fit: fill;
- padding: 1em;
- 
-
+ height: auto ;
+  max-width: 25vw;
   
 
-  
 }
  
   
@@ -177,6 +179,7 @@ height: auto ;
   bottom: 0;
   border-top: 2px solid black;
   background-color: #c3c3c3;
+  color: black;
   
   
 
@@ -205,11 +208,9 @@ height: auto ;
   justify-content: center;
   margin: 0 10rem ;
   padding-bottom: 10rem;
-  
-  
+  background-color: #ddddddab;
  
- 
-}
+ }
 
 .Album-bilder{
  height: 50vh ;
@@ -237,6 +238,42 @@ height: auto ;
   text-decoration: none;
   color: #424242ef;
 }
+/*-----------------------  Album  -----------------------------------*/
+.Album123{
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+   "låt1 låt1 låt1video"
+   "låt2 låt2 låt2video";
+  margin: 0;
+  padding-bottom: 10rem;
+  grid-row-gap: 10em;
+  grid-column-gap: 5em;
+  padding: 1em;
+  padding-right: 2em;
+}
+.låt1{
+  grid-area: låt1;
+
+}
+.låt1, .video1{
+  padding-top: 10em;
+}
+.låt2{
+  grid-area: låt2;
+  padding-bottom: 13em;
+}
+.video1{
+  width: 350px;
+  height: 345px;
+  
+}
+.video2{
+  grid-area: låt2video;
+  width: 350px;
+  height: 345px;
+  border: solid 5px black;
+}
 
 /*-----------------------  kontakt hemsidan  -----------------------------------*/
 .formular{
@@ -262,30 +299,4 @@ height: auto ;
   width: 25%;
   height: auto;
   justify-items: center;
-}
-.Album123{
-  display: grid;
-  grid-template-columns:1fr;
-  grid-template-areas:
-   "låt1 låt1 låt1video"
-   "låt2 låt2 låt2video";
-  margin: 0;
-  padding-bottom: 7rem;
-}
-.låt1{
-  grid-area: låt1;
-}
-.låt2{
-  grid-area: låt2;
-}
-.video1{
-  width: 150px;
- height: 150px; 
-
-}
-.video2{
-  grid-area: låt2video;
-  width: 420px;
-  height: 345px;
- 
 }
