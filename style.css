@@ -56,7 +56,7 @@ a {
   
 .nav-header a {
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .ul-header .nav-header:hover {
@@ -94,7 +94,10 @@ h1{
  
   
 }
+a:active{
+  background-color: rgb(192, 192, 192) ;
 
+}
 
 
 /*Kontakt länken ska vara placerad längs till höger*/ 
@@ -120,13 +123,10 @@ h1{
   position: relative;
   margin: 0;
   filter: grayscale(100%);
+  background-attachment: fixed;
 
 }
-.hIndex{
-  background-image: url("https://consequenceofsound.net/wp-content/uploads/2015/04/screen-shot-2015-04-16-at-8-54-18-am.png?w=807");
-  background-attachment:fixed ;  
-  
-}
+
 .kaney, .alb, .grad, .Late, .TheCol, .Mode, .Familj{
   text-align: center;
   color: white;
@@ -134,10 +134,39 @@ h1{
   font-size: 10vw;
   background-color:#1313138f ;
   font-family: 'Times New Roman', Times, serif;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 
-}
 
+}
+.hIndex{
+  background-image: url("https://consequenceofsound.net/wp-content/uploads/2015/04/screen-shot-2015-04-16-at-8-54-18-am.png?w=807");
+
+  
+}
+.grad{
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg");
+  
+}
+.Late{
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/f/f4/Late_registration_cd_cover.jpg");
+}
+.TheCol{
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a3/Kanyewest_collegedropout.jpg");
+  background-position: center;
+  background-color: #4e4e4e8f ;
+  color: black;
+  
+}
+.Mode{
+  background-image: url("https://media.gq.com/photos/56bce2f4b89407780bd7df9a/master/pass/kanye-west-gq-0714.jpg");
+}
+.Familj{
+  background-image: url("https://media1.popsugar-assets.com/files/thumbor/sxRYgzqDD-vmHLZN74r5tNAMSd8/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/12/21/800/n/1922398/10c129a65a3bf976a899b0.69984757_edit_img_image_44375925_1513815627/i/Kim-Kardashian-Kanye-West-Family-Holiday-Photos-2017.jpg");
+  background-position: center;
+  color: black;
+}
 
  /*---------------------- Content 1 ----------------------*/
 .content1 {
@@ -225,8 +254,8 @@ text-höger{
   justify-content: center;
   margin: 0 10rem ;
   padding-bottom: 10rem;
-  background-color: #ddddddab;
- padding-top: 15vh;
+  padding-top: 15vh;
+  font-size: 1.5vw;
  }
 
 .Album-bilder{
@@ -266,23 +295,24 @@ text-höger{
   padding-bottom: 10rem;
   grid-row-gap: 10em;
   grid-column-gap: 5em;
-  padding: 1em;
-  padding-right: 2em;
+  padding: 10rem 3em 10em 3em ;
+  
+
 }
 .låt1{
   grid-area: låt1;
+  font-size: 2vw;
 
 }
-.låt1, .video1{
-  padding-top: 10em;
-}
+
 .låt2{
   grid-area: låt2;
-  padding-bottom: 13em;
+ 
+  font-size: 2vw;
 }
 .video1{
-  width: 350px;
-  height: 345px;
+  max-width: 100%;
+  height: auto;
   
 }
 .video2{
@@ -290,6 +320,10 @@ text-höger{
   width: 350px;
   height: 345px;
   border: solid 5px black;
+}
+audio{
+  width: 20em;
+
 }
 
 /*-----------------------  kontakt hemsidan  -----------------------------------*/
@@ -315,32 +349,37 @@ text-höger{
   width: 25%;
   height: auto;
   justify-items: center;
+  filter: grayscale(100%);
+}
+label{
+  font-size: 2vw;
 }
 .textfält{
   border-radius: 5px;
   background-color: #757575ef;
   color: aliceblue;
-  padding: 10px 17px;
-
+  padding: 10px 45px;
+  font-size: 2vw;
 }
 textarea{
   border-radius: 5px;
   background-color: #757575ef;
   color: aliceblue;
+  width: 20em;
+  height: 18rem;
+  resize: none;
+  font-size: 1.5vw;
 
 }
 #skicka{
   background-color: #e2e2e2;
-  padding: 10px 17px;
+  padding: 30px 60px;
   border-radius: 15px;
   box-shadow: rgb(49, 47, 47);
 }
 #skicka:hover{
   background-color: rgb(192, 192, 192);
 }
-.box{
-  border-style: solid;
+fieldset{
   border-radius: 25px;
-  padding: 0;
-
 }
