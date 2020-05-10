@@ -1,89 +1,102 @@
-body{
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  background-color: #e7e7e7ef;
+body{ 
+  padding: 0; /*Där hur mycket utrryme från sidorna på hemsidan  */
+  margin: 0; /*Där hur mycket utrryme från sidorna på hemsidan  */
+  width: 100%; /*Bredden på hemsidan ska vara 100%*/
+  background-color: #e7e7e7ef; /*Bakgrunds fäegrg för alla hemsidor*/
 
   
 }
 /*---------------variabler------------- */
-:root{
-  --grå: #cacaca;
+:root{ /* Detta är varibaler som jag kan använda i cssen*/
+  --grå: #cacaca; /* Varibalen är grå */
 }
 
 /*---------------------- Grid instälningar  ----------------------*/
- .index{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: 
-    "content1   content1   "
-    "content2   content2   "
-    "  footer    footer  ";
-    padding-bottom: 7rem;
-
+.index{ /*. Är tilläg till classer */
+  display: grid; /* Vilken typ av stil jag kommer att använda och deet är grid*/
+  grid-template-columns: 1fr; /*Detta är hur många kolumer och vilken storlek som är 1fr*/
+  column-gap: 1fr; /*Dett är hur mycket mellanrum mellan sektionerna*/
+  grid-template-areas:  /*Detta är desig för vilka sektioner som ska se ut och varje del har jag nämnt nedean med grid area*/
+    "content1   pic-right  "
+    "pic-left   content2   ";
+  margin: 0; /* hur mycket från mellanrum från aknten */
+  padding-bottom: 10rem; /* Här hur mycket mellan rum till botten och mitt fall är fottern*/
+  grid-row-gap: 10em; /*Detta är hur mycket mellan rum mellan raderna */
+  grid-column-gap: 5em;
+  padding: 10rem 3em ;/*Den första stroleken är mellan rum från toppen och botten andra stroleken är från kanterna */
+  
 }
 
 
 
   /*---------------------- NAVBAR ----------------------*/
 
-a {
-  text-decoration: none;
+a { /*Detta stylen är för länkar */
+  text-decoration: none; /*Denna fukktionen betyder att lämkarna ska inte ha undestreckade*/
 }
 
-.manin-nav {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.main-nav {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Detta är vilken textstill för innehållet, Ordningen är från den minst tillgänglig till högst tilängnlig */
 }
 
-.ul-header, .dropdown {
-  background: rgb(94, 94, 94);
-  list-style: none;
+.ul-header, .dropdown { /*Detta är gruppselektor alltså stylen ska vara på två olika klasser */
+  background: rgb(94, 94, 94);/*Vilken bakgrund de ska ha, i detta fallet färg*/
+  list-style: none; /*Dett är för att ta bort punkterna från listan */
   margin: 0;
   padding-left: 0;
 }
 
-.nav-header, .drop {
-  color: #fff;
+.nav-header, .drop { 
+  color: #fff; /*Detta är färgen på texten */
   background: rgb(94, 94, 94);
-  display: block;
-  float: left;
-  padding: 1rem;
-  position: relative;
-  text-decoration: none;
-  transition-duration: 0.5s;
+  display: block; /*Dett är för att vrje länk ska få en egen block*/
+  float: left; /*Detta är för att det ska visa horizontell */
+  position: relative; /*Detta gör att postionen är relativ*/
+  text-decoration: none; /*Denna är för att ta bort punkter som är från listan */
+  transition-duration: 0.5s; /*Detta är hur mycet tid som tar för att visa upp de , detta fungerar som animation*/
   z-index: 1; /*Denna funktionen används för att jag hade probelem  med att drop down menyn kommer under innehållet,  men med hjälp av denna funktionen så  kan man  lägga det man  vill överst*/
+  font-size: 20px;
 }
-  
-.nav-header a {
-  color: #fff;
-  font-size: 1.5em;
+.active{ /*Detta är classen när hemsidan aktiv så får den en specifk fäärg*/
+  background-color: rgb(255, 255, 255, 0.65);
+
+}
+.nav-header a{
+color: white;
+display: block;
+color: white;
+text-align: center;
+padding: 1em;
+text-decoration: none;
 }
 
-.ul-header .nav-header:hover {
+
+
+.ul-header .nav-header:hover { /*Dett är för att specefera mer styling eller hover, då betyder det styla den .navheader som är under ul header*/
   background: rgb(192, 192, 192);
-  cursor: pointer;
+  
 }
 
-ul li ul {
+ul li ul { /*Dett för att specifera listen som ligger under in rad av lista alltså ul lista sedan kommer det e punkt sen under punkten så är det en lista*/
   background: rgb(173, 173, 173);
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
+  visibility: hidden; /*Dett är för att den ska inte visas när man har sidan öppen */
+  opacity: 0; /*Hur mycket genomsknlighet den ska ha*/
+  min-width: 5rem; /**minsta bredden */
+  position: absolute; /*Postionern ska var i mitten*/
+  transition: all 0.5s ease; /*Detta är en animtaion för listan */
+  margin-top: 1rem; 
   left: 0;
-  display: none;
+  display: none;/*Den ska inte ska visa något om man inte trycker eller håller över*/
 }
 
-ul li:hover > ul,
+ul li:hover > ul, /*Detta betyder den som är mellan de som ska ändras*/
 ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
+  visibility: visible; /*Här är det det ska senas om man håller över*/
+  opacity: 1; /*Genomskinligheten */
   display: block;
 }
 
-li.drop:hover{
+li.drop:hover{ /*Detta om man håller äver på dropsoen menyn */
   background-color: rgb(192, 192, 192);
 }
 h1{
@@ -91,44 +104,42 @@ h1{
   height: 45vh;
   margin: 0 ;
   
- 
+
   
 }
-a:active{
-  background-color: rgb(192, 192, 192) ;
 
-}
 
 
 /*Kontakt länken ska vara placerad längs till höger*/ 
-#höger{
-  float: right;
-  padding: 1rem;
+#höger{ /*# är tilläget för en id*/
+  float: right; /*var den ska placer*/
+  
 }
 
 
   
 
- 
- 
+
+
   /*---------------------- Header ----------------------*/
 .main-head {
   display: grid;
- 
+
 }
 
-.hIndex, .hAlbum, .hGrad, .hLate, .hTheCol, .hMode, .hFamilj{
-  background-repeat: no-repeat;
-  background-size: cover;
+.hIndex, .hAlbum, .hGrad, .hLate, .hTheCol, .hMode, .hFamilj{ /*Detta är grupp selektor*/
+  background-repeat: no-repeat; /*detta gör att bilden inte repeters och visas om flera gånger*/
+  background-size: cover; /*Vilken storlek den ska ha och idetta fallet är cover i header*/
   position: relative;
-  margin: 0;
-  filter: grayscale(100%);
-  background-attachment: fixed;
+  margin: 0; 
+  filter: grayscale(100%); /*Jag har filtreart vilden till svart bild*/
+  background-attachment: fixed; /*Detta är att bilden står på samma plats när man skrollarner eller upp*/
+  width: 100%;
 
 }
 
 .kaney, .alb, .grad, .Late, .TheCol, .Mode, .Familj{
-  text-align: center;
+  text-align: center; /*Detta är för var texten ska vara placerad*/
   color: white;
   padding-top: 13vh;
   font-size: 10vw;
@@ -137,10 +148,11 @@ a:active{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  
 
 
 }
-.hIndex{
+.hIndex{ /*Här har jag infogat bilder url är för att hämta en länk*/
   background-image: url("https://consequenceofsound.net/wp-content/uploads/2015/04/screen-shot-2015-04-16-at-8-54-18-am.png?w=807");
 
   
@@ -168,50 +180,48 @@ a:active{
   color: black;
 }
 
- /*---------------------- Content 1 ----------------------*/
+/*---------------------- Content 1 ----------------------*/
 .content1 {
- grid-area: content1;
- padding: 1em;
- text-align: left;
- justify-items: left;
- grid-column:1/3;
- 
+grid-area: content1; /*Detta namnet är som står på grid area templates*/
+font-size: 30px;/*text storlek*/
+
+}
+.bild-right{
+  margin: auto;
+  float: right;
 }
 
 .bild-höger{
-  height: auto ;
-  max-width: 25vw;
-  justify-content: center;
-  object-fit: cover;
-  padding: 1em;
-  grid-column: 3/4;
-  
+grid-area: pic-right;
+width: 500px;
+height: auto;
+object-fit: fill;
 }
- 
- 
+
+
   /*---------------------- Content 2 ----------------------*/
 .content2 {
   grid-area: content2;
-  background-color: var(--grå);
-  padding: 1rem;
-  text-align: right;
-  grid-column: 2/4;
+  font-size: 2vw;
+  
 }
-.vänster{
-  justify-self: left;
-  max-width: max-content;
-}
+
 
 text-höger{
   float:right;
 }
+.bild-left{
+  margin: 10px;
+}
 .bild-vänster{
- height: auto ;
-  max-width: 25vw;
+grid-area: pic-left;
+width: 500px;
+height: 50vh;
+object-fit: fill;
   
 
 }
- 
+
   
   /*---------------------- Footer ----------------------*/
 .main-footer {
@@ -233,9 +243,9 @@ text-höger{
 }
 .main-footer li  a:hover{
   background-color: rgb(182, 182, 182);
-
-
 }
+  
+
 /*-----------------------  Album hemsidan  -----------------------------------*/
 @media (min-width: 600px) {
   .album { grid-template-columns: repeat(2, 1fr); }
@@ -247,7 +257,7 @@ text-höger{
   .album { grid-template-columns: repeat(3, 1fr); }
 }
 .album{
- max-width: 1200px;
+max-width: 1200px;
   display: grid;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
@@ -256,15 +266,15 @@ text-höger{
   padding-bottom: 10rem;
   padding-top: 15vh;
   font-size: 1.5vw;
- }
+}
 
 .Album-bilder{
- height: 50vh ;
- max-width: 25vw;
- justify-content: center;
- margin: auto;
- object-fit: cover;
- 
+height: 50vh ;
+max-width: 25vw;
+justify-content: center;
+margin: auto;
+object-fit: cover;
+
 
 
 }
@@ -275,8 +285,8 @@ text-höger{
   filter: grayscale(200%);
 }
 .title{
-  color: black;
-  font-weight: bold;
+  color: black; 
+  font-weight: bold; /*Dett för att göra texten tjockare*/
   text-align: center;
 
 } 
@@ -289,42 +299,44 @@ text-höger{
   display: grid;
   grid-template-columns:1fr;
   grid-template-areas:
-   "låt1 låt1 låt1video"
-   "låt2 låt2 låt2video";
+  "låt1 låt1video"
+  " låt2video låt2";
   margin: 0;
   padding-bottom: 10rem;
   grid-row-gap: 10em;
   grid-column-gap: 5em;
-  padding: 10rem 3em 10em 3em ;
+  padding: 10rem 3em ;
   
 
 }
 .låt1{
   grid-area: låt1;
-  font-size: 2vw;
+  font-size: 25px;
 
 }
 
 .låt2{
   grid-area: låt2;
- 
-  font-size: 2vw;
+  font-size: 25px;
 }
 .video1{
-  max-width: 100%;
-  height: auto;
+  grid-area: låt1video;
+  width: 500px;
+  height:420px;
+  object-fit: fill;
   
 }
 .video2{
   grid-area: låt2video;
-  width: 350px;
-  height: 345px;
-  border: solid 5px black;
+  width: 500px;
+  height:420px;
+  object-fit: fill;
 }
 audio{
-  width: 20em;
+  width: 40vw;
 
 }
+
 
 /*-----------------------  kontakt hemsidan  -----------------------------------*/
 .formular{
@@ -334,7 +346,7 @@ audio{
   "   .         form        .    "
   " footer     footer       footer ";
   text-align: center;
- padding:10rem 15em ;
+padding:10rem 15em ;
 
 }
 .Kontakt{
@@ -382,4 +394,5 @@ textarea{
 }
 fieldset{
   border-radius: 25px;
+  background-color: var(--grå);
 }

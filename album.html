@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title> Album </title>
+<!DOCTYPE html> <!--Är en av standarderna inom html-->
+<html lang="sv">  <!--Gör så att uppläsnings språket är svenska-->
+<head> <!--Här börjar en del av koden men det ser man inte när man är inne på sidan-->
+    <meta charset="UTF-8"> <!--Det är en typ av teckenkodning från unikod -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
+    <link href="style.css" rel="stylesheet"> <!--Detta är extern fil till att designa hemsidan css fil är formaten för den-->
+    <title> Album </title> <!--Title som ska se ut på fliken-->
 </head>
 <body>
    
@@ -13,8 +13,8 @@
 <header class="main-head">
     <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
         <ul class="ul-header"> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
-            <li class="nav-header"> <a class="active" href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
-            <li class="nav-header"> <a href="album.html">Album</a>
+            <li class="nav-header"> <a href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
+            <li class="nav-header"> <a class="active" href="album.html">Album</a>
                 <ul class="dropdown">
                     <li class="drop"><a href="graduation.html">Graduation</a></li>
                     <li class="drop"><a href="LateRegistraion.html">Late Registraion</a></li>
@@ -36,31 +36,36 @@
 
 
 <div class="album"> <!-- Denna stycket har jag gjort för att jag ska kunna göra en grid display, den kommer att täcka hela bodyen-->
-    <section class="album1">
-       <a href="graduation.html"> <img class="Album-bilder" src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg" alt="GraduationCover"></a>
-    <p class="title"> <a href="graduation.html"> Graduation </a> </p>
+    <section class="album1"> <!-- Varje album har jag gjort ett stycke fför då den har egen sektion -->
+       <a href="graduation.html"> <img class="Album-bilder" src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg" alt="GraduationCover"></a> <!--Jag har länkat bilden med hemsidan -->
+    <p class="title"> <a href="graduation.html"> Graduation </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
 
     </section> 
     <section class="album2">
-        <a href="LateRegistraion.html"><img class="Album-bilder" src="https://upload.wikimedia.org/wikipedia/en/f/f4/Late_registration_cd_cover.jpg" alt="LateregistratioCover"></a>
-        <p class="title"><a href="LateRegistraion.html"> Late Registration </a> </p>
+        <a href="LateRegistraion.html"><img class="Album-bilder" src="https://upload.wikimedia.org/wikipedia/en/f/f4/Late_registration_cd_cover.jpg" alt="LateregistratioCover"></a><!--Jag har länkat bilden med hemsidan -->
+        <p class="title"><a href="LateRegistraion.html"> Late Registration </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+
 
     </section>
     <section class="album3">
-        <a href="TheCollegeDropout.html"><img class="Album-bilder" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Kanyewest_collegedropout.jpg" alt="TheCollegeDropoutCover"></a>
-        <p class="title"><a href="TheCollegeDropout.html"> The College Drop Out </a> </p>
+        <a href="TheCollegeDropout.html"><img class="Album-bilder" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Kanyewest_collegedropout.jpg" alt="TheCollegeDropoutCover"></a><!--Jag har länkat bilden med hemsidan -->
+        <p class="title"><a href="TheCollegeDropout.html"> The College Drop Out </a> </p><!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+
     </section>
     <section class="album4">
-        <a href="https://genius.com/albums/Kanye-west/Ye"><img class="Album-bilder" src="https://media.pitchfork.com/photos/5b1160a8d8c21c49d0ae4eef/2:1/w_1000/Kanye%20Ye.png" alt="YeCover"></a>
-        <p class="title"><a href="https://genius.com/albums/Kanye-west/Ye"> Ye </a> </p>
+        <a href="https://genius.com/albums/Kanye-west/Ye"><img class="Album-bilder" src="https://media.pitchfork.com/photos/5b1160a8d8c21c49d0ae4eef/2:1/w_1000/Kanye%20Ye.png" alt="YeCover"></a><!--Jag har länkat bilden med hemsidan -->
+        <p class="title"><a href="https://genius.com/albums/Kanye-west/Ye"> Ye </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+
     </section >
     <section class="album5">
-        <a href="https://genius.com/albums/Kanye-west-and-dj-a-trak/Welcome-to-kanye-s-soul-mix-show"><img class="Album-bilder" src="https://img.discogs.com/2hZLD89XtPY3NBHAgwGIItipv-Q=/fit-in/600x535/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5794717-1524704994-1585.jpeg.jpg" alt="Welcome to Kanye's Soul Mix Show"> 
-        <p class="title">  <a href="https://genius.com/albums/Kanye-west-and-dj-a-trak/Welcome-to-kanye-s-soul-mix-show"> Welcome to Kanye's Soul Mix Show </a></p>
+        <a href="https://genius.com/albums/Kanye-west-and-dj-a-trak/Welcome-to-kanye-s-soul-mix-show"><img class="Album-bilder" src="https://img.discogs.com/2hZLD89XtPY3NBHAgwGIItipv-Q=/fit-in/600x535/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5794717-1524704994-1585.jpeg.jpg" alt="Welcome to Kanye's Soul Mix Show"> <!--Jag har länkat bilden med hemsidan -->
+        <p class="title">  <a href="https://genius.com/albums/Kanye-west-and-dj-a-trak/Welcome-to-kanye-s-soul-mix-show"> Welcome to Kanye's Soul Mix Show </a></p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+
     </section>
     <section class="album6">
-        <a href="https://soundcloud.com/erik-dekker-9/sets/kanye-west-vh1-storytellers"><img class="Album-bilder" src="https://images-na.ssl-images-amazon.com/images/I/41HUcDnR8eL._SX355_.jpg" alt="Storeytellers"></a>
-        <p class="title"><a href="https://soundcloud.com/erik-dekker-9/sets/kanye-west-vh1-storytellers"> Storey Tellers </a> </p>
+        <a href="https://soundcloud.com/erik-dekker-9/sets/kanye-west-vh1-storytellers"><img class="Album-bilder" src="https://images-na.ssl-images-amazon.com/images/I/41HUcDnR8eL._SX355_.jpg" alt="Storeytellers"></a><!--Jag har länkat bilden med hemsidan -->
+        <p class="title"><a href="https://soundcloud.com/erik-dekker-9/sets/kanye-west-vh1-storytellers"> Storey Tellers </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+
     </section>
     
 
@@ -70,15 +75,15 @@
 
 
 
-<footer class="main-footer">
-    <ul>
-          <li> <a href="album.html"> Album </a> </li>
-          <li> <a href="ModeDesigner.html"> Mode designer </a></li>
-          <li> <a href="Familj.html"> Familj </a> </li>
-          <li> <a href="Kontakt.html"> Kontakt </a> </li>
-      </ul>
-</footer>
+<footer class="main-footer"> <!--Footer är det en av den vanliga delen so står på alla hemsidor, detta ligger längst ner i hemsidan -->
+<ul> <!--Detta är typen av listan men som kommer att vara på footern-->
+        <li> <a href="album.html"> Album </a> </li> <!--Detta är en punkt i listan-->
+        <li> <a href="ModeDesigner.html"> Mode designer </a></li>
+        <li> <a href="Familj.html"> Familj </a> </li>
+        <li> <a href="Kontakt.html"> Kontakt </a> </li>
+    </ul> <!--Sluttager för ul-->
+</footer> <!--Sluttager för Footer-->
     
     
-</body>
-</html>
+</body> <!--Sluttager för bodyn-->
+</html><!--Sluttager för html-->
