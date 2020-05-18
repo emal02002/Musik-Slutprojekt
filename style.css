@@ -202,7 +202,7 @@ object-fit: fill;
   /*---------------------- Content 2 ----------------------*/
 .content2 {
   grid-area: content2;
-  font-size: 2vw;
+  width: 60;
   
 }
 
@@ -216,7 +216,7 @@ text-höger{
 .bild-vänster{
 grid-area: pic-left;
 width: 500px;
-height: 50vh;
+height: 420px;
 object-fit: fill;
   
 
