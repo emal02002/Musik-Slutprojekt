@@ -9,18 +9,18 @@
 <body>
 <header class="main-head">
     <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
-        <ul class="ul-header"> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
-            <li class="nav-header"> <a href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
-            <li class="nav-header"> <a href="album.html">Album</a>
-                <ul class="dropdown">
-                    <li class="drop"><a href="graduation.html">Graduation</a></li>
-                    <li class="drop"><a href="LateRegistraion.html">Late Registraion</a></li>
-                    <li class="drop"><a href="TheCollegeDropout.html">The College Drop Out</a></li>
+        <ul> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
+            <li> <a href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
+            <li> <a href="album.html">Album</a>
+                <ul>
+                    <li><a href="graduation.html">Graduation</a></li>
+                    <li><a href="LateRegistraion.html">Late Registraion</a></li>
+                    <li><a href="TheCollegeDropout.html">The College Drop Out</a></li>
                 </ul>
-            </li>
-            <li class="nav-header"> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
-            <li class="nav-header"> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
-            <li  class="nav-header" id="höger" > <a class="active" href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
+            </li>   
+            <li> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
+            <li> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
+            <li id="höger" > <a class="active" href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
                 
         </ul>
     </nav>
@@ -37,20 +37,37 @@
 <section >
 
     <h2> Kontakt formulär</h2>
-    <section class="box" class="kontakt">
-    <fieldset action="tack.html"> <!--Detta är en typ av för att för att göra forum /actio är att den ska tar till annan hemsidan när man summerar-->
-        <br>
-        <label for="f&enamn">För och efternamn</label> <br><br> <!--Text som till hör en skriv ruta / br (radbrytning)-->
-        <input class="textfält" type="text" name="f&enamn" id="f&enamn"> <br><br> <!--Input är rutan som man kan fylla i sin information-->
-        <label for="mejladress">Mejladress</label> <br><br>
-        <input class="textfält" type="text" name="mejladress" id="mejladress"> <br><br>
-        <label for="Telefonnummer">Telefonnummer</label> <br><br>
-        <input class="textfält" type="text" name="Telefonnummer" id="Telefonnummer"> <br> <br>
-        <label for="Beskrivning">Beskrivning</label> <br> <br>
-        <textarea name="Beskrivning" id="Beskrivning" cols="30" rows="10"></textarea> <br> <br>
-        <input id="skicka" type="submit" value="submit"> <br> <br> <!--Detta är en kanpp som summerar ihop och tar till en annan hemsida-->
-
-    </fieldset>
+    <section class="kontakt">
+    <form action="tack.html"> <!--Detta är en typ av för att för att göra forum /actio är att den ska tar till annan hemsidan när man summerar-->
+        <br> 
+        <fieldset>
+            <legend>Person uppgifter</legend>
+            <label for="f&enamn">För och efternamn</label> <br><br> <!--Text som till hör en skriv ruta / br (radbrytning)-->
+            <input class="textfält" type="text" name="f&enamn" id="f&enamn"> <br><br> <!--Input är rutan som man kan fylla i sin information-->
+            <label for="kon">Kön</label> <br><br>
+            <input type="radio" id="Man" name="kon" value="Man">
+            <label for="Man">Man</label>
+            <input type="radio" id="Kvinna" name="kon" value="Kvinna">
+            <label for="Kvinna">Kvinna</label> 
+            <input type="radio" id="annat" name="kon" value="annat">
+            <label for="annat">annat</label> <br><br>
+            <label for="mejladress">Mejladress</label> <br><br>
+            <input class="textfält" type="text" name="mejladress" id="mejladress"> <br><br>
+            <label for="Telefonnummer">Telefonnummer</label> <br><br>
+            <input class="textfält" type="text" name="Telefonnummer" id="Telefonnummer"> <br> <br>
+        </fieldset> <br> <br>
+        <fieldset>
+            <legend>Meddelande</legend>
+            <label for="angaende"> Meddelandet angående </label> <br> <br>
+            <input type="checkbox" id="val1" name="låtar" value="val">
+            <label for="låtar">Låtar</label><br>
+            <input type="checkbox" id="val2" name="Mode" value="val">
+            <label for="val2"> Mode </label><br><br><br>
+            <label for="Beskrivning">Beskrivning</label> <br> <br>
+            <textarea name="Beskrivning" id="Beskrivning" cols="30" rows="10"></textarea> <br> <br><br> <br> <!--Detta är en kanpp som summerar ihop och tar till en annan hemsida-->
+        </fieldset> <br> <br>
+        <button type="submit"> Skicka </button>
+    </form>
     </section>
 </section>
 </div>

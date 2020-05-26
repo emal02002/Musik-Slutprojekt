@@ -7,66 +7,60 @@
     <title> Kanye Waste </title> <!--Title som ska se ut på fliken-->
 </head>
 <body>
+    <header class="main-head"> <!--Detta är header för alla hemsidor som är allra längst upp i hemsidan-->
+        <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
+            <ul> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
+                <li> <a class="active" href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan / classen active är när jag är på hemsidan så visas sidan som är aktic -->
+                <li> <a href="album.html">Album</a> <!--Denna listan kommer att ha en till lista -->
+                    <ul> <!--Här är en annan lista men som är endast under album-->
+                        <li><a href="graduation.html">Graduation</a></li>
+                        <li><a href="LateRegistraion.html">Late Registraion</a></li>
+                        <li><a href="TheCollegeDropout.html">The College Drop Out</a></li>
+                    </ul> <!--Slut taggen för listan -->
+                </li>
+                <li> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
+                <li> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
+                <li  id="höger" > <a href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
+                    
+            </ul>
+        </nav>
+    </header>
+    <section class="hIndex Header"> <!-- Section är sektion och detta är för dla informationen i olika delar, JAg har klasserat den för  att den ska få egen stil-->
+        <section>
+        <h1 class="kaney"> Kanye West </h1> <!--H1 tagge är en huvudrubrik-->
+        </section> <!--Sluttagen för section-->
+    </section>
+   
+    <div class="index"> <!-- Denna stycket har jag gjort för att jag ska kunna göra en grid display, den kommer att täcka hela bodyen -->
     
-        
+        <section class="content1"> <!--Content1 är den första text stycket-->
+            <h2>Vem är Kanye West</h2> <!--h2 är en en huvudrubrik men som är mindre h1-->
+            <p>Som Kanye West utan tvekan skulle säga dig själv, är han ett fenomen från 2000-talet - en producent förvandlade rap-superstjärna som har återuppfunnit hiphop flera gånger igenom under en fantastisk karriär; men vars kreativa geni ibland försvagas av hans talang för att sätta hela foten i sin egen mun. Han har gjort rubriker för sina bisarra tweets och hans storslagna uttalanden, hans invasioner av prisutställningen, hans outré modekänsla och sitt blixtsnabba äktenskap med Kim Kardashian. Men när West kanaliserar sina hubristiska impulser till sin musik har resultaten sällan varit mindre än spännande: därmed åtta soloalbum som debuterade vid nr 1 och 21 Grammy-priser - ingen rappare har vunnit mer; två inneslutningar i Time magazine's 100 mest inflytelserika folklista; och plauditer från Lou Reed, Prince, Elon Musk - och, oftast av allt, från West själv. "Jag är en gud," rappade han 2013 och följde upp med en linje som kanske bara han kunde leverera med ett rakt ansikte: "Skynda dig med min jävla croissanter."</p> <!--Detta är paragraf -->
+        </section>
+        <section class="bild1"> <!--Denna klassen är för att lägga till bilden på rad1 -->
+            <img src="https://www.biography.com/.image/t_share/MTU0OTkwNDUxOTQ5MDUzNDQ3/kanye-west-attends-the-christian-dior-show-as-part-of-the-paris-fashion-week-womenswear-fall-winter-2015-2016-on-march-6-2015-in-paris-france-photo-by-dominique-charriau-wireimage-square.jpg" alt="Keny west">
+        </section>
 
-<header class="main-head"> <!--Detta är header för alla hemsidor som är allra längst upp i hemsidan-->
-    <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
-        <ul class="ul-header"> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
-            <li class="nav-header"> <a class="active" href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan / classen active är när jag är på hemsidan så visas sidan som är aktic -->
-            <li class="nav-header"> <a href="album.html">Album</a> <!--Denna listan kommer att ha en till lista -->
-                <ul class="dropdown"> <!--Här är en annan lista men som är endast under album-->
-                    <li class="drop"><a href="graduation.html">Graduation</a></li>
-                    <li class="drop"><a href="LateRegistraion.html">Late Registraion</a></li>
-                    <li class="drop"><a href="TheCollegeDropout.html">The College Drop Out</a></li>
-                </ul> <!--Slut taggen för listan -->
-            </li>
-            <li class="nav-header"> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
-            <li class="nav-header"> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
-            <li  class="nav-header" id="höger" > <a href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
-                
-        </ul>
-    </nav>
- </header>
- <section class="hIndex"> <!-- Section är sektion och detta är för dla informationen i olika delar, JAg har klasserat den för  att den ska få egen stil-->
-    <section>
-     <h1 class="kaney"> Kanye West </h1> <!--H1 tagge är en huvudrubrik-->
-    </section> <!--Sluttagen för section-->
-</section>
-<div class="index"> <!-- Denna stycket har jag gjort för att jag ska kunna göra en grid display, den kommer att täcka hela bodyen -->
-    <section class="content1"> <!--Content1 är den första text stycket-->
-        <h3>Vem är Kanye West</h3> <!--H3 är en en huvudrubrik men som är mindre h1-->
-        <p>Som Kanye West utan tvekan skulle säga dig själv, är han ett fenomen från 2000-talet - en producent förvandlade rap-superstjärna som har återuppfunnit hiphop flera gånger igenom under en fantastisk karriär; men vars kreativa geni ibland försvagas av hans talang för att sätta hela foten i sin egen mun. Han har gjort rubriker för sina bisarra tweets och hans storslagna uttalanden, hans invasioner av prisutställningen, hans outré modekänsla och sitt blixtsnabba äktenskap med Kim Kardashian. Men när West kanaliserar sina hubristiska impulser till sin musik har resultaten sällan varit mindre än spännande: därmed åtta soloalbum som debuterade vid nr 1 och 21 Grammy-priser - ingen rappare har vunnit mer; två inneslutningar i Time magazine's 100 mest inflytelserika folklista; och plauditer från Lou Reed, Prince, Elon Musk - och, oftast av allt, från West själv. "Jag är en gud," rappade han 2013 och följde upp med en linje som kanske bara han kunde leverera med ett rakt ansikte: "Skynda dig med min jävla croissanter."</p> <!--Detta är paragraf -->
-    </section>
-    <section class="bild-right">
-        <img class="bild-höger" src="https://www.biography.com/.image/t_share/MTU0OTkwNDUxOTQ5MDUzNDQ3/kanye-west-attends-the-christian-dior-show-as-part-of-the-paris-fashion-week-womenswear-fall-winter-2015-2016-on-march-6-2015-in-paris-france-photo-by-dominique-charriau-wireimage-square.jpg" alt="Keny west">
-    </section>
-
-
-    <section class="content2">
-    <section >
-        <h3>Talangfull musikproducent</h3>
-        <p>Efter att ha ägnat tid åt att producera för lokala konstnärer utvecklade West en signaturstil, kallad "chipmunk soul", kännetecknad av snabba själprover. Han flyttade sedan till New York 2001. Här fick han sin stora paus hantera produktionen för Jay Z-spåret "This Can't Be Life", som dök upp på 2000-albumet Dynasty: Roc La Familia. Året efter cementerade han sitt växande rykte genom att producera fyra låtar på Jay Zs Blueprint, allmänt betraktat som ett av de största rapalbumen genom tiderna. Därifrån fortsatte West för att producera för andra stjärntalenter, inklusive rapparna Mos Def, Talib Kweli och Ludacris, och sångarna Alicia Keys och Beyoncé.</p>
-    </section>
-     
-    </section>
-    <section class="bild-left">
-        <img class="bild-vänster" src="https://media.stubhubstatic.com/stubhub-catalog/d_defaultLogo.jpg/t_f-fs-0fv,q_auto:low,f_auto,c_fill,dpr_2.0,$w_750,$h_416/performer/30290/qzkyzzarp6plrmjfr7ov" alt="en bild på Kanye på fest">
-    </section>
-</div>
+        <section class="content2">
+                <h2>Talangfull musikproducent</h2>
+                <p>Efter att ha ägnat tid åt att producera för lokala konstnärer utvecklade West en signaturstil, kallad "chipmunk soul", kännetecknad av snabba själprover. Han flyttade sedan till New York 2001. Här fick han sin stora paus hantera produktionen för Jay Z-spåret "This Can't Be Life", som dök upp på 2000-albumet Dynasty: Roc La Familia. Året efter cementerade han sitt växande rykte genom att producera fyra låtar på Jay Zs Blueprint, allmänt betraktat som ett av de största rapalbumen genom tiderna. Därifrån fortsatte West för att producera för andra stjärntalenter, inklusive rapparna Mos Def, Talib Kweli och Ludacris, och sångarna Alicia Keys och Beyoncé.</p>
+        </section>
+        <section class=" bild2">
+                <img src="https://media.stubhubstatic.com/stubhub-catalog/d_defaultLogo.jpg/t_f-fs-0fv,q_auto:low,f_auto,c_fill,dpr_2.0,$w_750,$h_416/performer/30290/qzkyzzarp6plrmjfr7ov" alt="en bild på Kanye på fest">
+        </section>
+    </div>
 
 
 
 
-<footer class="main-footer"> <!--Footer är det en av den vanliga delen so står på alla hemsidor, detta ligger längst ner i hemsidan -->
-  <ul> <!--Detta är typen av listan men som kommer att vara på footern-->
-        <li> <a href="album.html"> Album </a> </li> <!--Detta är en punkt i listan-->
-        <li> <a href="ModeDesigner.html"> Mode designer </a></li>
-        <li> <a href="Familj.html"> Familj </a> </li>
-        <li> <a href="Kontakt.html"> Kontakt </a> </li>
-    </ul> <!--Sluttager för ul-->
-</footer> <!--Sluttager för Footer-->
+    <footer class="main-footer"> <!--Footer är det en av den vanliga delen so står på alla hemsidor, detta ligger längst ner i hemsidan -->
+    <ul> <!--Detta är typen av listan men som kommer att vara på footern-->
+            <li> <a href="album.html"> Album </a> </li> <!--Detta är en punkt i listan-->
+            <li> <a href="ModeDesigner.html"> Mode designer </a></li>
+            <li> <a href="Familj.html"> Familj </a> </li>
+            <li> <a href="Kontakt.html"> Kontakt </a> </li>
+        </ul> <!--Sluttager för ul-->
+    </footer> <!--Sluttager för Footer-->
     
-    
-</body> <!--Sluttager för bodyn-->
+ </body> <!--Sluttager för bodyn-->
 </html><!--Sluttager för html-->

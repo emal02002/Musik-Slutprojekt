@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--Är en av standarderna inom html-->
+<!DOCTYPE html> <!--ar en av standarderna inom html-->
 <html lang="sv">  <!--Gör så att uppläsnings språket är svenska-->
 <head> <!--Här börjar en del av koden men det ser man inte när man är inne på sidan-->
     <meta charset="UTF-8"> <!--Det är en typ av teckenkodning från unikod -->
@@ -7,69 +7,63 @@
     <title> Album </title> <!--Title som ska se ut på fliken-->
 </head>
 <body>
-   
-
-
-<header class="main-head">
-    <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
-        <ul class="ul-header"> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
-            <li class="nav-header"> <a href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
-            <li class="nav-header"> <a class="active" href="album.html">Album</a>
-                <ul class="dropdown">
-                    <li class="drop"><a href="graduation.html">Graduation</a></li>
-                    <li class="drop"><a href="LateRegistraion.html">Late Registraion</a></li>
-                    <li class="drop"><a href="TheCollegeDropout.html">The College Drop Out</a></li>
-                </ul>
-            </li>
-            <li class="nav-header"> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
-            <li class="nav-header"> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
-            <li  class="nav-header" id="höger" > <a href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
-                
-        </ul>
-    </nav>
-    </header>
-    <section class="hAlbum"><section>
-        <h1 class="alb"> S e n a s t e </h1>
-    </section>
-</section>
-
-
-
-<div class="album"> <!-- Denna stycket har jag gjort för att jag ska kunna göra en grid display, den kommer att täcka hela bodyen-->
-    <section class="album1"> <!-- Varje album har jag gjort ett stycke fför då den har egen sektion -->
-       <a href="graduation.html"> <img class="Album-bilder" src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg" alt="GraduationCover"></a> <!--Jag har länkat bilden med hemsidan -->
-    <p class="title"> <a href="graduation.html"> Graduation </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
-
-    </section> 
-    <section class="album2">
-        <a href="LateRegistraion.html"><img class="Album-bilder" src="https://upload.wikimedia.org/wikipedia/en/f/f4/Late_registration_cd_cover.jpg" alt="LateregistratioCover"></a><!--Jag har länkat bilden med hemsidan -->
-        <p class="title"><a href="LateRegistraion.html"> Late Registration </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
-
-
-    </section>
-    <section class="album3">
-        <a href="TheCollegeDropout.html"><img class="Album-bilder" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Kanyewest_collegedropout.jpg" alt="TheCollegeDropoutCover"></a><!--Jag har länkat bilden med hemsidan -->
-        <p class="title"><a href="TheCollegeDropout.html"> The College Drop Out </a> </p><!-- Jag har länkat texten så att med den så kan man nå det albumet-->
-
-    </section>
-    <section class="album4">
-        <a href="https://genius.com/albums/Kanye-west/Ye"><img class="Album-bilder" src="https://media.pitchfork.com/photos/5b1160a8d8c21c49d0ae4eef/2:1/w_1000/Kanye%20Ye.png" alt="YeCover"></a><!--Jag har länkat bilden med hemsidan -->
-        <p class="title"><a href="https://genius.com/albums/Kanye-west/Ye"> Ye </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
-
-    </section >
-    <section class="album5">
-        <a href="https://genius.com/albums/Kanye-west-and-dj-a-trak/Welcome-to-kanye-s-soul-mix-show"><img class="Album-bilder" src="https://img.discogs.com/2hZLD89XtPY3NBHAgwGIItipv-Q=/fit-in/600x535/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5794717-1524704994-1585.jpeg.jpg" alt="Welcome to Kanye's Soul Mix Show"> <!--Jag har länkat bilden med hemsidan -->
-        <p class="title">  <a href="https://genius.com/albums/Kanye-west-and-dj-a-trak/Welcome-to-kanye-s-soul-mix-show"> Welcome to Kanye's Soul Mix Show </a></p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
-
-    </section>
-    <section class="album6">
-        <a href="https://soundcloud.com/erik-dekker-9/sets/kanye-west-vh1-storytellers"><img class="Album-bilder" src="https://images-na.ssl-images-amazon.com/images/I/41HUcDnR8eL._SX355_.jpg" alt="Storeytellers"></a><!--Jag har länkat bilden med hemsidan -->
-        <p class="title"><a href="https://soundcloud.com/erik-dekker-9/sets/kanye-west-vh1-storytellers"> Storey Tellers </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
-
+      <header class="main-head">
+        <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
+            <ul> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
+                <li> <a href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
+                <li> <a class="active" href="album.html">Album</a>
+                    <ul>
+                        <li><a href="graduation.html">Graduation</a></li>
+                        <li><a href="LateRegistraion.html">Late Registraion</a></li>
+                        <li><a href="TheCollegeDropout.html">The College Drop Out</a></li>
+                    </ul>
+                </li>
+                <li> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
+                <li> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
+                <li  id="höger" > <a href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
+                    
+            </ul>
+        </nav>
+        </header>
+        <section class="hAlbum"><section>
+            <h1 class="alb"> S e n a s t e </h1>
+        </section>
     </section>
     
+    <div class="album"> <!-- Denna stycket har jag gjort för att jag ska kunna göra en grid display, den kommer att täcka hela bodyen-->
+        <section class="album1"> <!-- Varje album har jag gjort ett stycke fför då den har egen sektion -->
+        <a href="graduation.html"> <img src="Bilder/Graduation_(album).jpg" alt="Graduation"></a> <!--Jag har länkat bilden med hemsidan -->
+        <p class="title"> <a href="graduation.html"> Graduation </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
 
-</div>
+        </section> 
+        <section class="album2">
+            <a href="LateRegistraion.html"><img src="Bilder/Late_registration_cd_cover.jpg"alt="Late_registration_cd_cover"></a><!--Jag har länkat bilden med hemsidan -->
+            <p class="title"><a href="LateRegistraion.html"> Late Registration </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+
+
+        </section>
+        <section class="album3">
+            <a href="TheCollegeDropout.html"><img src="Bilder/Kanyewest_collegedropout.jpg" alt="CollegeDropOut"></a><!--Jag har länkat bilden med hemsidan -->
+            <p class="title"><a href="TheCollegeDropout.html"> The College Drop Out </a> </p><!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+
+        </section>
+        <section class="album4">
+            <a href="https://genius.com/albums/Kanye-west/Ye"><img src="Bilder/Kanye Ye cover.png" alt="YeCover"></a><!--Jag har länkat bilden med hemsidan -->
+            <p class="title"><a href="https://genius.com/albums/Kanye-west/Ye"> Ye </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+
+        </section >
+        <section class="album5">
+            <a href="https://genius.com/albums/Kanye-west-and-dj-a-trak/Welcome-to-kanye-s-soul-mix-show"><img src="Bilder/Kanyes soul.jpg" alt="Welcome to Kanye's Soul Mix Show"> </a><!--Jag har länkat bilden med hemsidan -->
+            <p class="title"><a href="https://genius.com/albums/Kanye-west-and-dj-a-trak/Welcome-to-kanye-s-soul-mix-show"> Welcome to Kanye's Soul Mix Show </a></p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+
+        </section>
+        <section class="album6">
+            <a href="https://soundcloud.com/erik-dekker-9/sets/kanye-west-vh1-storytellers"><img src="Bilder/Story teller.jpg" alt="Storeytellers"></a><!--Jag har länkat bilden med hemsidan -->
+            <p class="title"><a href="https://soundcloud.com/erik-dekker-9/sets/kanye-west-vh1-storytellers"> Storey Tellers </a> </p> <!-- Jag har länkat texten så att med den så kan man nå det albumet-->
+        </section>
+        
+
+    </div>
 
 
 

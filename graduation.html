@@ -11,18 +11,18 @@
     
 <header class="main-head">
     <nav class="main-nav" > <!--Navigations baren. Här Har gjort att denna naven ska vara global alltså att den ska finnas på alla sidor-->
-        <ul class="ul-header"> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
-            <li class="nav-header"> <a href="index.html">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
-            <li class="nav-header"> <a class="active" href="album.html">Album</a>
-                <ul class="dropdown">
-                    <li class="drop"><a class="active" href="graduation.html">Graduation</a></li>
-                    <li class="drop"><a href="LateRegistraion.html">Late Registraion</a></li>
-                    <li class="drop"><a href="TheCollegeDropout.html">The College Drop Out</a></li>
+        <ul> <!--För att kunna gör en nav så måste man göra in lista, Här har jag valt att göra unsorted list, det går välja vilken lista som helst så länge man ta bort det som följer med, i mitt fall är det punkter-->
+            <li> <a href="index.html    ">Kanye West</a></li> <!--En rad i listan men den kommer att synas som en block, det fixas med css, Kommentaren kommer att finnas tillänglig där. href arttibitet är om man vill lägga en länk och i mitt fall kommer det att bli startsidan  -->
+            <li> <a class="active" href="album.html">Album</a>
+                <ul>
+                    <li><a class="active" href="graduation.html">Graduation</a></li>
+                    <li><a href="LateRegistraion.html">Late Registraion</a></li>
+                    <li><a href="TheCollegeDropout.html">The College Drop Out</a></li>
                 </ul>
             </li>
-            <li class="nav-header"> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
-            <li class="nav-header"> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
-            <li  class="nav-header" id="höger" > <a href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
+            <li> <a href="ModeDesigner.html"> Mode designer </a></li> <!-- Moder desigenr sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen -->
+            <li> <a href="Familj.html"> Familj </a> </li> <!-- familj sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen-->
+            <li id="höger" > <a href="Kontakt.html"> Kontakt </a> </li> <!-- Kontakt sida som har en länk och som är rad i sort av en lista för naven men som kommer att vara inline i cssen. Id arttibuten är för endast denna länken kommer att vara längs till höger-->
                 
         </ul>
     </nav>
@@ -34,50 +34,61 @@
 </section>
 <div class="Album123"> <!-- Denna stycket har jag gjort för att jag ska kunna göra en grid display, den kommer att täcka hela bodyen-->
 
-<section class="låt1"> <
-    <h3>Stronger</h3>
-        <p>Stronger är första singeln från Kanye Wests tredje album. Låten är byggd på en sampling från den franska elektronicagruppen Daft Punks låt "Harder, Better, Faster, Stronger". Låten framfördes i Sverige för första gången under det avslutande framträdande av den första Way Out West-festivalen, sommaren 2007.</p>
-         <audio controls > <!--Detta är ljud fil som gåt att kontrolleras alltså scrolla fram och tillbaka , ljudvolym-->
-            <source src="Låtar/Kanye-West-Stronger.mp3" type="audio/mpeg"> <!--Detta är källan för ljudfilen -->
-        </audio> <!--Sluttagen för ljud-->
-</section>   
-<section class="video"> 
-    <iframe class="video1" src="https://youtube.se/embed/PsO6ZnUZI0g"></iframe> <!--Ifram används för att läka något klipp ex youtube sedan ska man embeda det med /embed/länken  /Video klippen gårinte  att stätta igång av någon anledning men de är tesstade på w3schools och fungerar bra -->
-</section> 
-
-
-
+    <section class="låt1"> 
+        <h2>Stronger</h2>
+            <p>Stronger är första singeln från Kanye Wests tredje album. Låten är byggd på en sampling från den franska elektronicagruppen Daft Punks låt "Harder, Better, Faster, Stronger". Låten framfördes i Sverige för första gången under det avslutande framträdande av den första Way Out West-festivalen, sommaren 2007.</p>
+            <audio controls > <!--Detta är ljud fil som gåt att kontrolleras alltså scrolla fram och tillbaka , ljudvolym-->
+                <source src="Låtar/Kanye-West-Stronger.mp3" type="audio/mpeg"> <!--Detta är källan för ljudfilen -->
+            </audio> <!--Sluttagen för ljud-->
+    </section>   
+    <section class="video"> 
+        <iframe src="https://youtube.se/embed/PsO6ZnUZI0g"></iframe> <!--Ifram används för att läka något klipp ex youtube sedan ska man embeda det med /embed/länken  /Video klippen gårinte  att stätta igång av någon anledning men de är tesstade på w3schools och fungerar bra -->
+    </section> 
     
-<section  class="låt2">
- <h3>Good Morning</h3>
-    <p>Kanyes introduktion till hans tredje album, Graduation, är en väckning för sig själv och världen. Det ger också Kanye en chans att visa upp sina polerade lyriska förmågor.
-
-        Låten är en del av en större metafor: Albumet Graduation är Kanyes ”examen” i rapspel. "Good Morning" berättas som om Kanye vaknar upp på sin examen dag, påminner om sina college dagar och äntligen får sin "rapping examen" i den tredje versen. Skolan / högskolatema är mycket närvarande under hela låten.</p><br>
-    <audio controls>
-        <source src="Låtar/Kanye-West-Good-Morning.mp3" type="audio/mpeg">
-    </audio>
-</section>
-<section class="video">
-    <iframe class="video2" src="https://www.youtube.com/embed/6CHs4x2uqcQ"></iframe> <!--Video klippen gårinte  att stätta igång av någon anledning men de är tesstade på w3schools och fungerar bra -->
-</section>
+    <section class="låt2">
+    <h2>Good Morning</h2>
+        <p>Kanyes introduktion till hans tredje album, Graduation, är en väckning för sig själv och världen. Det ger också Kanye en chans att visa upp sina polerade lyriska förmågor. Låten är en del av en större metafor: Albumet Graduation är Kanyes ”examen” i rapspel. "Good Morning" berättas som om Kanye vaknar upp på sin examen dag, påminner om sina college dagar och äntligen får sin "rapping examen" i den tredje versen. Skolan / högskolatema är mycket närvarande under hela låten.</p><br>
+        <audio controls>
+            <source src="Låtar/Kanye-West-Good-Morning.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <section class="video">
+        <iframe src="https://www.youtube.com/embed/6CHs4x2uqcQ"></iframe> <!--Video klippen gårinte  att stätta igång av någon anledning men de är tesstade på w3schools och fungerar bra -->
+    </section>
+    <section> 
+        <h2>Mer låtar</h2>
+        <table>
+            <tr>
+                <th>Låtens namn</th>
+                <th>Lanserings datum</th>
+                <th>Längd (min)</th>
+            </tr>
+            <tr>
+                <td> Champion</td>
+                <td>2007</td>
+                <td>02:48</td>
+            </tr>
+            <tr>
+                <td>Can't tell me</td>
+                <td>2015</td>
+                <td>04:31</td>
+            </tr>
+            <tr>
+                <td>The glorry</td>
+                <td>2008</td>
+                <td>03:33</td>
+            </tr>
+        </table>
+    </section>
 </div>
-        
-    
-    
-        
-    
-    
-    
-    
-
 
 <footer class="main-footer">
     <ul>
-          <li> <a href="album.html"> Album </a> </li>
-          <li> <a href="ModeDesigner.html"> Mode designer </a></li>
-          <li> <a href="Familj.html"> Familj </a> </li>
-          <li> <a href="Kontakt.html"> Kontakt </a> </li>
-      </ul>
+        <li> <a href="album.html"> Album </a> </li>
+        <li> <a href="ModeDesigner.html"> Mode designer </a></li>
+        <li> <a href="Familj.html"> Familj </a> </li>
+        <li> <a href="Kontakt.html"> Kontakt </a> </li>
+    </ul>
 </footer>
 </body>
 </html>
