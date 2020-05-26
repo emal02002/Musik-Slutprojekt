@@ -344,6 +344,12 @@ legend{ /*Legende är huvudrubrik på en fieldset kan man säga */
   place-self: center;
   padding-bottom: 10rem;
 }
+.textfält{
+  border-radius: 5px;
+  background-color: #757575ef;
+  color: aliceblue;
+  padding: 10px 45px;
+}
 .runda-hörn{
   border-radius: 100%;
   width: 25%;
